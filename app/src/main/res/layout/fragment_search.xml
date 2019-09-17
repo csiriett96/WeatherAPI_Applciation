@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:id="@+id/coordLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context =".MainActivity">
+    <android.support.design.widget.CoordinatorLayout
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_text_margin"
+                android:layout_marginRight="@dimen/edit_text_margin"
+                android:hint="@string/search_text"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="@dimen/standard_text_size"/>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_marginLeft="@dimen/edit_text_margin"
+                android:layout_marginRight="@dimen/edit_text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search_button"
+                android:textSize="@dimen/standard_text_size"/>
+
+            <TextView
+                android:id="@+id/cityField"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/city_field_text_size"/>
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/image_view_margin"
+                android:layout_height="@dimen/image_view_margin"
+                />
+
+            <TextView
+                android:id="@+id/detailsField"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/standard_text_size"/>
+
+            <TextView
+                android:id="@+id/current_temperature"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/city_field_text_size"/>
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/share_button"
+                android:visibility="invisible"
+                android:drawableStart="@drawable/baseline_share_black_18dp"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingButton"
+            android:src="@drawable/baseline_star_black_18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="tab_text_1">Search</string>
+    <string name="tab_text_2">Favourites</string>
+    <string name="weather_app_id">d6bc089d6ec1d2cd15abb258053a667a</string>
+    <string name="place_not_found">Sorry, no weather data found for that city.</string>
+    <string name="search_button">Search</string>
+    <string name="search_text">Search for a city</string>
+    <string name="share_button">Share</string>
+    <string name="share_send_text">Share to</string>
+    <string name="filter_hint">Filter Favourites</string>
+    <string name="added_to_favourites">City added to your favourites</string>
+    <string name="already_in_favourites">City is already in your favourites</string>
+    <string name="city_deleted_from_favourites">City has been removed from your favourites</string>
+
+</resources>
